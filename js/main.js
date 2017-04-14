@@ -1,19 +1,12 @@
 $(document).ready(function() {
 
 instagramFeed();
+checkScroll();
 
 
-
-if ($('.splash')[0]){
-
-
+/*if ($('#splash-container')[0]){
 
   $(window).scroll(function (event){
-    var scroll = $(window).scrollTop();
-
-    var opacity = 0;
-
-    var fadeInVal = $('.splash').height() /2.5 ;
 
 
   // Opcity fade.
@@ -32,7 +25,7 @@ if ($('.splash')[0]){
 }
 else {
   $('#fadeInLogo').css({'opacity': '1'});
-}
+}*/
 
 
 
@@ -63,7 +56,7 @@ function instagramFeed() {
           userId: '278079083',
           resolution: 'standard_resolution',
           accessToken: '278079083.1677ed0.234d080ab776476a8c87cd698caf5adf',
-          template: '<div id="insta" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 insta"><a href="{{link}}"><img class="instaImg pure-img" src="{{image}}"></a></div>',
+          template: '<div id="insta" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 insta"><a href="{{link}}"><img class="instaImg pure-img" src="{{image}}"></a></div>',
           limit: '9'
       });
       userFeed.run();
@@ -77,3 +70,19 @@ $( ".helena" ).each( function() {
     var $img = $( this );
     $img.height( $img.height() * .5 );
 });
+
+$(window).scroll(function (event){
+  checkScroll();
+});
+
+function checkScroll(){
+  console.log("scroll");
+  var scroll = $("#menu").position().top;
+  var pageHeight = $(window).height();
+
+  if(scroll >= (pageHeight + 2)){
+    $('#fadeInLogo').css("opacity", 1);
+  }else if(scroll < (pageHeight + 2)){
+    $('#fadeInLogo').css("opacity", 0);
+  }
+}
