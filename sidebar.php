@@ -28,7 +28,7 @@
 !-->
 <!-- NYTT !-->
 
-<div id="sidebar">
+<div id="sidebar" class="pure-u-lg-1-5">
   <h1>Nyheter</h1>
   <?php
     $args = array( 'numberposts' => '5' );

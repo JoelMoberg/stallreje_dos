@@ -55,14 +55,10 @@
     <?php include 'meny.php' ?>
     <div id="page-wrapper">
       <div id="content-wrapper">
-        <div class="pure-g">
-          <div class="pure-u-3-4" id="instagramFeed">
-            <h1>Bilder från Instagram</h1>
-            <div id="instafeed" class="pure-g"></div>
-          </div>
-          <div class="pure-u-1-4">
-            <?php get_sidebar(); ?>
-          </div>
+        <div class="pure-g" id="instagramFeed">
+
+            <div id="instafeed" class="pure-g"><?php get_sidebar(); ?></div>
+          
         </div>
       </div>
     </div>

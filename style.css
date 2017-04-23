@@ -79,7 +79,7 @@ header{
   background: #EBEDED;
   padding: 0.5em;
   text-align: center;
-  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+  box-shadow: 0 5px 1px rgba(0,0,0, 0.10);
   color: white;
   font-weight: 400;
   font-size: 120%;
@@ -350,13 +350,13 @@ h1, h2, p{
 
 #content-wrapper{
   width: 100%;
-  padding: 80px;
+  padding: 0px;
   min-height: 100vh;
 
   margin: auto;
 }
 .instaImg {
-  padding: 1px;
+  padding: 0px;
 }
 
 .vertical-middle{
@@ -367,11 +367,19 @@ h1, h2, p{
 }
 
 #sidebar{
+
   box-sizing: border-box;
-  margin-left: 10px;
+  //margin-left: 10px;
   padding: 10px;
   background: white;
   text-decoration: none;
+  float: right;
+
+}
+
+.pure-g{
+  width: auto;
+  display: block!important;
 }
 
 #sidebar h2, p{
@@ -397,8 +405,9 @@ a:-webkit-any-link{
 
 #instagramFeed{
   background: white;
-  padding: 10px;
+  padding: 0px;
   box-sizing: border-box;
+  padding-top: 10px;
 }
 
 #instagramFeed h1, #sidebar h1{
