@@ -56,7 +56,7 @@ function instagramFeed() {
           userId: '278079083',
           resolution: 'standard_resolution',
           accessToken: '278079083.1677ed0.234d080ab776476a8c87cd698caf5adf',
-          template: '<div id="insta" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5 insta"><a href="{{link}}"><img class="instaImg pure-img" src="{{image}}"></a></div>',
+          template: '<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5 insta"><a href="{{link}}" target="_blank"><img class="instaImg pure-img" src="{{image}}"><div class="instaCaption"><p>{{caption}}</p></div></a></div>',
           limit: '40'
       });
       userFeed.run();

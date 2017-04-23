@@ -150,8 +150,7 @@ header{
   width: 100%;
   z-index: 4;
   font-family: 'Montserrat', serif;
-
-
+  width: 100%;
 }
 
 .aboutText{
@@ -222,7 +221,7 @@ header{
   height: 100%;
   top: 0;
   left: 0;
-  position: fixed !important;
+  position: fixed;
 
 }
 
@@ -301,6 +300,11 @@ hr.style-seven {
   height: 100vh;
   z-index: -1;
   text-align: center;
+
+  background: url("assets/test.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #splash-img-container{
@@ -323,6 +327,7 @@ hr.style-seven {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.33);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.33);
   box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+  z-index: 10;
 }
 
 #menu a{
@@ -355,8 +360,44 @@ h1, h2, p{
 
   margin: auto;
 }
+
 .instaImg {
   padding: 0px;
+}
+
+.insta:hover:hover .instaImg{
+  filter: brightness(.25);
+}
+
+.insta:hover .instaCaption{
+  opacity: 1;
+}
+.instaCaption, .instaImg{
+  transition: all .2s;
+}
+
+.instaCaption{
+  position: absolute;
+  padding: 10px;
+  bottom: 0px;
+  opacity: 0;
+}
+
+.instaCaption p{
+  color: white;
+}
+
+.insta{
+  position: relative;
+}
+.pure-u-1, .pure-u-md-1-2, .pure-u-lg-1-5{
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.pure-g{
+  //margin: -2px;
+  overflow-x: hidden;
 }
 
 .vertical-middle{
@@ -378,7 +419,7 @@ h1, h2, p{
 }
 
 .pure-g{
-  width: auto;
+  //width: auto;
   display: block!important;
 }
 
@@ -407,7 +448,8 @@ a:-webkit-any-link{
   background: white;
   padding: 0px;
   box-sizing: border-box;
-  padding-top: 10px;
+  width: auto;
+  padding-bottom: 2px;
 }
 
 #instagramFeed h1, #sidebar h1{
