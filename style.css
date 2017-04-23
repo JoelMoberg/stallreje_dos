@@ -405,6 +405,7 @@ h1, h2, p{
 #instagramFeed{
   margin: -1px;
   overflow-x: hidden;
+  background: white;
 }
 
 .vertical-middle{

@@ -61,7 +61,7 @@
       </div>
     </div>
     <?php get_footer(); ?>
-    <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/instagram.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/frontPage.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/main.js"></script>
   </body>
 </html>
