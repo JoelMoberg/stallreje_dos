@@ -12,14 +12,37 @@ get_header(); ?>
 <body>
 
 <?php include 'meny.php' ?>
+  <div id="page-wrapper">
+    <div id="content-wrapper">
+      <div class="pure-g about-section">
+        <div class="pure-u-lg-1-2 pure-u-md-1 about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
+        <div class="pure-u-lg-1-2 pure-u-md-1 about-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt lacus orci. Curabitur orci lorem, condimentum id ex sed, pharetra ullamcorper ipsum.
+            Curabitur lorem risus, efficitur et pharetra consectetur, ultrices sed lacus. Aliquam mi lacus, feugiat non bibendum sed, consectetur eget sapien.
+          <p>
+        </div>
+      </div>
+      <div class="pure-g about-section">
+        <div class="pure-u-lg-1-2 pure-u-md-1 about-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt lacus orci. Curabitur orci lorem, condimentum id ex sed, pharetra ullamcorper ipsum.
+            Curabitur lorem risus, efficitur et pharetra consectetur, ultrices sed lacus. Aliquam mi lacus, feugiat non bibendum sed, consectetur eget sapien.
+          <p>
+        </div>
+        <div class="pure-u-lg-1-2 pure-u-md-1 about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
+      </div>
+      <div class="pure-g about-section">
+        <div class="pure-u-lg-1-2 pure-u-md-1 about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
+        <div class="pure-u-lg-1-2 pure-u-md-1 about-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt lacus orci. Curabitur orci lorem, condimentum id ex sed, pharetra ullamcorper ipsum.
+            Curabitur lorem risus, efficitur et pharetra consectetur, ultrices sed lacus. Aliquam mi lacus, feugiat non bibendum sed, consectetur eget sapien.
+          <p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
-
-
-<div class="about-wrap hr">
-  <h1 class="is-center title"> Om stall Reje </h1>
-<div class="pure-g">
+<!--<div class="pure-g">
 
   <div class="pure-u-1-5">
     <img class="pure-img  is-center" src="<?php bloginfo('template_directory');?>/assets/IMG_8626.jpg" >
@@ -28,9 +51,9 @@ get_header(); ?>
     <div class="content pure-u-3-5 aboutText">
 
         <?php
-          $page = get_page_by_title('om Stall reje');
+          /*$page = get_page_by_title('om Stall reje');
           $content = apply_filters('the_content', $page->post_content);
-          echo $content;
+          echo $content;*/
           ?>
 
     </div>
@@ -54,7 +77,7 @@ get_header(); ?>
       <img class="pure-img  is-center" src="<?php bloginfo('template_directory');?>/assets/helenarygg.jpg">
     </div>
 
-</div>
+</div>!-->
 
 
 

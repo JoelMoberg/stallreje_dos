@@ -1,7 +1,7 @@
 
-<div class="pure-u-1">
+<!--<div class="pure-u-1">
   <img class="pure-img" style="width: 100%;" src="<?php bloginfo('template_directory');?>/assets/asdf.jpg">
-</div>
+</div>!-->
 
 <div class=" footer pure-g">
 

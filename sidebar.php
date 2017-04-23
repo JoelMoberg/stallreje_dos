@@ -36,7 +36,7 @@
     foreach( $recent_posts as $recent ){
       $date = substr($recent['post_date'], 0, 10);
 
-        printf( '<a href="%1$s"><div class="newsItem"><h2>%2$s</h2><p>' . $date . '</p></div></a>',
+        printf( '<a href="%1$s"><div class="newsItem"><h2>%2$s</h2><p class="date">' . $date . '</p></div></a>',
              esc_url( get_permalink( $recent['ID'] ) ),
              apply_filters( 'the_title', $recent['post_title'], $recent['ID'] )
          );
