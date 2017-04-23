@@ -1,35 +1,8 @@
 $(document).ready(function() {
 
-instagramFeed();
 checkScroll();
-
-
-/*if ($('#splash-container')[0]){
-
-  $(window).scroll(function (event){
-
-
-  // Opcity fade.
-  if(scroll < fadeInVal){
-    if(scroll <= fadeInVal){
-        opacity=scroll/fadeInVal;
-      }
-      console.log('scroll: ' + scroll);
-      console.log('fadeUntil: ' + fadeInVal);
-      console.log('opacity: ' + opacity);
-      $('#fadeInLogo').css({'opacity': opacity});
-  }
-
-  });
-
-}
-else {
-  $('#fadeInLogo').css({'opacity': '1'});
-}*/
-
-
-
-
+//$("a[href*='" + location.pathname + "']").addClass("currentPage");
+console.log(location.pathname)
 
 //Check if user is on mobile
 window.mobilecheck = function() {
@@ -49,40 +22,9 @@ console.log("Is user Mobile?: " + mobilecheck());
 
 
 
-function instagramFeed() {
 
-  var userFeed = new Instafeed({
-          get: 'user',
-          userId: '278079083',
-          resolution: 'standard_resolution',
-          accessToken: '278079083.1677ed0.234d080ab776476a8c87cd698caf5adf',
-          template: '<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5 insta"><a href="{{link}}" target="_blank"><img class="instaImg pure-img" src="{{image}}"><div class="instaCaption"><p>{{caption}}</p></div></a></div>',
-          limit: '40'
-      });
-      userFeed.run();
-
-      $(".insta").hover(function(){
-        console.log("hover!");
-      });
-}
 
 $( ".helena" ).each( function() {
     var $img = $( this );
     $img.height( $img.height() * .5 );
 });
-
-$(window).scroll(function (event){
-  checkScroll();
-});
-
-function checkScroll(){
-  console.log("scroll");
-  var scroll = $("#menu").position().top;
-  var pageHeight = $(window).height();
-
-  if(scroll >= (pageHeight + 2)){
-    $('#fadeInLogo').css("opacity", 1);
-  }else if(scroll < (pageHeight + 2)){
-    $('#fadeInLogo').css("opacity", 0);
-  }
-}

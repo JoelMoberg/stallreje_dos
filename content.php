@@ -1,10 +1,6 @@
-<div class="pure-u-1 post is-center  ">
-  <hr class="style-seven">
 
-  <h2 class="post_title"><?php the_title(); ?></h2>
-  <p class="post_meta"> <?php the_date(); ?> </p>
-<div class="pure-u-3-4 readMore">
-  <?php the_content('<p>Läs Mer...</p>'); ?>
-</div>
-
+<div class="news-item-full pure-u-lg-1-2 pure-u-md-1">
+  <h1 class="post_title"><?php the_title(); ?></h1>
+  <p class="post_meta date"> <?php the_date(); ?> </p>
+  <div class="readMore"><?php the_content('<p>Läs Mer...</p>'); ?></div>
 </div>
