@@ -359,6 +359,7 @@ h1, h2, p{
   min-height: 100vh;
 
   margin: auto;
+  overflow-x: hidden;
 }
 
 .instaImg {
@@ -391,12 +392,12 @@ h1, h2, p{
   position: relative;
 }
 .pure-u-1, .pure-u-md-1-2, .pure-u-lg-1-5{
-  padding: 2px;
+  padding: 1px;
   box-sizing: border-box;
 }
 
 .pure-g{
-  //margin: -2px;
+  margin: -1px;
   overflow-x: hidden;
 }
 
