@@ -38,7 +38,7 @@
           'sort_order' => 'ASC',
           'sort_column' => 'menu_order',
           'hierarchical' => 1,
-          'exclude' => '79',
+          'exclude' => '79 109',
           'child_of' => 0,
           'parent' => -1,
           'exclude_tree' => '',

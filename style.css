@@ -14,6 +14,21 @@ Tags: hästar
     box-sizing: border-box;
 }
 
+
+.grey{
+  background: #EBEBEB;
+
+}
+
+.blackBorder{
+  background: black;
+}
+
+.white {
+  background: white;
+}
+
+
 #borderLeft {
   margin-left: 1em;
   text-indent: 1em;
@@ -38,7 +53,7 @@ hr {
 
 }
 
-/*post styling */
+/*POST STYLINGS */
 
 .post{
   padding-right: 1em;
@@ -53,13 +68,15 @@ hr {
 
 }
 
+/* END POST STYLINGS */
+
 /* Sidebar */
 
 
 
 
 
-/* lite meny */
+/* MENY STYLES */
 
 #fadeInLogo {
   opacity: 1;
@@ -101,6 +118,8 @@ header{
 
 }*/
 
+/* END MENY STYLES */
+
 /* CONTENT STUFF */
 .title {
   font-size: 250%;
@@ -108,12 +127,69 @@ header{
 
 }
 
+.content-wrap {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  min-height: 12%;
+  z-index: 4;
+  background: white;
+}
+
+.footer {
+  position: absolute;
+  background: rgb(38,38,38);
+  color: white;
+  width: 100%;
+
+  width: 100%;
+}
+
+.footer p {
+  color: white;
+  font-family: 'Montserrat', serif;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+
+.inspoinfo{
+  opacity: 0.3;
+}
+
+.inspoinfo:hover{
+  opacity: 1;
+}
+
+
+
+
+.aboutText{
+  font-family: 'Montserrat', serif;
+
+}
+
+.kontakt {
+  padding: 2em;
+  margin: auto;
+}
+
+
+
+
+/* NEWS STYLES */
 
 .nyheter {
   font-size: 150%;
   font-family: 'PT Serif', serif;
   padding: 0 10px;
 
+}
+
+#news {
+  z-index: 1;
 }
 
 /*.newsItem {
@@ -133,49 +209,19 @@ header{
   opacity: 0.7;
 }
 
-
-.content-wrap {
-  position: absolute;
-  width: 100%;
-  top: 45%;
-  min-height: 12%;
-  z-index: 4;
-  background: white;
-}
-
-.footer {
-  position: absolute;
-  background: #544A40;
-  color: white;
-  width: 100%;
-  z-index: 4;
-  font-family: 'Montserrat', serif;
-  width: 100%;
-}
-
-.aboutText{
-  font-family: 'Montserrat', serif;
+.readMore a{
+  text-decoration: none;
+  color:inherit;
+  font-size: 110%
 
 }
 
-.kontakt {
-  padding: 2em;
-  margin: auto;
-}
 
-.grey{
-  background: #EBEBEB;
+/* END NEWS STYLES */
 
-}
 
-.blackBorder{
-  background: black;
-}
 
-.white {
-  background: white;
-}
-
+/* SOCIAL MEDIA STYLES */
 .socialMedia{
   color:inherit;
   text-decoration: none;
@@ -185,6 +231,8 @@ header{
 .socialMedia:hover{
   opacity: 0.7;
 }
+
+/* END SOCIAL MEDIA STYLES */
 
 
 .content {
@@ -203,12 +251,7 @@ header{
   background: #EBEBEB;
 }
 
-.readMore a{
-  text-decoration: none;
-  color:inherit;
-  font-size: 110%
 
-}
 
 
 /* Splash scrollover effekter här */
@@ -238,11 +281,8 @@ header{
 
 }
 
-.omBild {
 
- padding:2em;
-
-}
+/* End splash */
 
 .about {
   font-size: 120%;
@@ -258,20 +298,6 @@ header{
   border-right-style: solid;
 }
 
-/* Instagram feed styling */
-
-/*.instaImg {
-
-border-style: solid;
-border-width: 1em;
-border-color: #EBEBEB;
-padding: 1em;
-background: white;
-}
-
-.instaPadding{
-  padding-left: 10em;
-}*/
 
 
 hr.style-seven {
@@ -344,6 +370,11 @@ hr.style-seven {
 
 }
 
+.kontaktImage {
+  z-index: 0;
+  
+}
+
 .currentPage{
   border-bottom: 1px solid black;
 
@@ -363,7 +394,6 @@ h1, h2, p{
   width: 100%;
   padding: 0px;
   min-height: 100vh;
-
   margin: auto;
   overflow-x: hidden;
 }
@@ -440,11 +470,13 @@ h1, h2, p{
 
 .date{
   color: gray;
+
 }
 
+
 .newsItem {
-  padding: 10px 0;
-  margin-bottom: 10px;
+  padding: 5px 0;
+  margin-bottom: 0px;
 }
 a:-webkit-any-link{
   text-decoration: none;
@@ -505,3 +537,6 @@ a:-webkit-any-link{
   font-size: 1.4em;
   line-height: 1.4em;
 }
+
+
+/* MEDIA QUERIES */
