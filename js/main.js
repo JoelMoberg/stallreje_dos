@@ -21,6 +21,12 @@ console.log("Is user Mobile?: " + mobilecheck());
 
 
 
+function responsiveMenu() {
+  var x = document.getElementbyId("menu");
+  if(x.classname==="")
+}
+
+
 
 
 

@@ -18,7 +18,7 @@
 <div class="content-wrap hr">
   <h1 class="is-center"> <?php the_title(); ?> </h1>
 
-<div class="pure-g">
+
 
 
 
@@ -33,7 +33,6 @@
 
     </div>
 
-</div>
 
 
 
