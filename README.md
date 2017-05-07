@@ -2,8 +2,17 @@
 
 # Responsivitet
 - Bestämma textstorlekar för olika enheter
+- Nyheter text
+- om-text fri höjd?
 
 # Allmänt
 - Markera nuvarande sida i länkarna
-- Välja ut feta häst-bilder 
-- Flex-box med stretch på page-wrapper för att sätta footer vid botten vid kortare sidor?
+- Loggan ska va länk
+- styla om-text
+
+
+# Fixar
+- Bakgrund på nyheter
+
+# JS
+- hamburgare
