@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-checkScroll();
+//checkScroll();
 //$("a[href*='" + location.pathname + "']").addClass("currentPage");
 console.log(location.pathname)
 
@@ -23,7 +23,7 @@ console.log("Is user Mobile?: " + mobilecheck());
 
 function responsiveMenu() {
   var x = document.getElementbyId("menu");
-  if(x.classname==="")
+  //if(x.classname==="")
 }
 
 
