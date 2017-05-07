@@ -32,8 +32,6 @@ Tags: hästar
 #borderLeft {
   margin-left: 1em;
   text-indent: 1em;
-  border-left-style: solid;
-  border-width: 1px;
 
 
 }
@@ -139,16 +137,15 @@ header{
 
 .footer {
   position: absolute;
-  background: rgb(38,38,38);
+  background: #ebebeb;
   color: white;
   width: 100%;
-
-  width: 100%;
+  padding: 50px 0;
 }
 
-.footer p {
-  color: white;
-  font-family: 'Montserrat', serif;
+.footer p, .footer h3 {
+  color: #424141;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer a {
@@ -224,7 +221,7 @@ header{
 
 /* SOCIAL MEDIA STYLES */
 .socialMedia{
-  color:inherit;
+  color: #424141;
   text-decoration: none;
 
 }
@@ -364,6 +361,7 @@ hr.style-seven {
   text-decoration: none;
   color: black;
   margin: 0 40px;
+  z-index: 20;
 }
 
 #menu a:hover, #menu a:active{
@@ -396,15 +394,27 @@ h1, h2, p{
   padding: 0px;
   min-height: 100vh;
   margin: auto;
-  //overflow-x: hidden;
 }
 
 .instaImg {
   padding: 0px;
 }
 
-.insta:hover:hover .instaImg{
-  filter: brightness(.25);
+.instaCaption-background{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background: #FFAFBD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.insta:hover .instaImg{
+  //filter: brightness(.25);
 }
 
 .insta:hover .instaCaption{
@@ -418,11 +428,25 @@ h1, h2, p{
   position: absolute;
   padding: 10px;
   bottom: 0px;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 40;
   opacity: 0;
+  background: -moz-linear-gradient(top, rgba(255,195,160,0.8) 0%, rgba(255,175,189,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,195,160,0.8) 0%,rgba(255,175,189,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,195,160,0.8) 0%,rgba(255,175,189,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffc3a0', endColorstr='#ccffafbd',GradientType=0 ); /* IE6-9 */
+
 }
 
 .instaCaption p{
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .insta{
@@ -434,7 +458,6 @@ h1, h2, p{
 }
 
 #instagramFeed{
-  overflow-x: hidden;
   background: white;
 }
 
@@ -455,8 +478,7 @@ h1, h2, p{
 }
 
 .pure-g{
-  //width: auto;
-  //display: block!important;
+  display: block!important;
 }
 
 #sidebar h2, p{
@@ -486,7 +508,6 @@ a:-webkit-any-link{
   padding: 0px;
   box-sizing: border-box;
   width: auto;
-  padding-bottom: 2px;
 
 }
 
@@ -570,7 +591,7 @@ a:-webkit-any-link{
   .about-section section{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    -webkit-flex-direction: column;
   }
   .about-section section:nth-child(even){
     flex-direction: column;
