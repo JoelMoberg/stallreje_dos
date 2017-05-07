@@ -9,6 +9,7 @@
 - Markera nuvarande sida i länkarna
 - Loggan ska va länk
 - styla om-text
+- centera instafeed
 
 
 # Fixar
