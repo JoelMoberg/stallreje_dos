@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+
+  $("#toggleMenu").click(function(){
+        $(".responsiveMenu").toggle();
+      });
+
+  $("#close").click(function(){
+    $(".responsiveMenu").toggle();
+  });
+
+
 //checkScroll();
 //$("a[href*='" + location.pathname + "']").addClass("currentPage");
 console.log(location.pathname)
@@ -17,20 +27,4 @@ if(mobilecheck()){
 
 console.log("Is user Mobile?: " + mobilecheck());
 
-});
-
-
-
-function responsiveMenu() {
-  var x = document.getElementbyId("menu");
-  //if(x.classname==="")
-}
-
-
-
-
-
-$( ".helena" ).each( function() {
-    var $img = $( this );
-    $img.height( $img.height() * .5 );
 });
