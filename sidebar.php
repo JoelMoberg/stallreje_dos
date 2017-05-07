@@ -28,10 +28,10 @@
 !-->
 <!-- NYTT !-->
 
-<div id="sidebar" class="pure-u-lg-1-5">
+<div id="sidebar" class="pure-u-lg-1-5 pure-u-1 is-center" >
   <h1>Nyheter</h1>
   <?php
-    $args = array( 'numberposts' => '5' );
+    $args = array( 'numberposts' => '3' );
     $recent_posts = wp_get_recent_posts( $args );
     foreach( $recent_posts as $recent ){
       $date = substr($recent['post_date'], 0, 10);

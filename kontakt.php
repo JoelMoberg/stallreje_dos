@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html>
-<?php
-/*
-Template Name: Kontakt
 
-*/
+  <?php
+  /*
+  Template Name: Nyheter
+  */
+  get_header(); ?>
+  <body>
+    <?php include 'meny.php' ?>
+    <div id="page-wrapper">
+      <div id="content-wrapper">
+          <div id="news" class="pure-g">
+            <div class="news-item-full pure-u-lg-1-2 pure-u-md-1">
+              <h1 class="post_title">Kontakt</h1>
+              <p> Calle Callesson <p>
+              <p> 070-070 43 53 53<p>
+              <p> bergshamra <p>
+            </div>
+              <div class="about-img" style="height: 30vw; background: url('<?php bloginfo('template_directory');?>/assets/boot.jpeg')"></div>
+          </div>
+      </div>
+    </div>
 
-
-get_header(); ?>
-
-<body>
-
-<?php include 'meny.php' ?>
-
-
-
-
-
-<div class="about-wrap hr">
-  <h1 class="is-center title"> Om stall Reje </h1>
-<div class="pure-g">
-  <div class="pure-u-1-4"> </div>
-  <div class="pure-u-1-2 kontakt">
-  <form class="pure-form" style="width: 100%;">
-    <fieldset class="pure-group">
-      <input type="text" class="pure-input-1-2" placeholder="Namn">
-      <input type="text" class="pure-input-1-2" placeholder="Email">
-    </fieldset>
-
-    <fieldset class="pure-group">
-      <input type="text" class="pure-input-1-2" placeholder="Ämne">
-      <textarea class="pure-input-1-2" placeholder="Meddelande" style="height: 12em;"></textarea>
-    </fieldset>
-
-    <button type="submit" class="pure-button pure-input 1-2 pure-button-primary "> Skicka </button>
-  </form>
-</div>
-<div class="pure-u-1-4"></div>
-
-</div>
-
-
-
-
-
-
-<!-- end content-wrap in footer -->
-
-<?php get_footer(); ?>
-<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/main.js"></script>
-</body>
+    <?php get_footer(); ?>
+    <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/main.js"></script>
+  </body>
 </html>
