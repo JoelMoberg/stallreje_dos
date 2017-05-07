@@ -17,7 +17,7 @@ get_header(); ?>
       <div class="about-section">
         <section>
           <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
-          <div class="about-text">TEXT 1
+          <div class="about-text">
               <?php
                 $page = get_page_by_title('om Stall reje');
                 $content = apply_filters('the_content', $page->post_content);
@@ -40,7 +40,7 @@ get_header(); ?>
         <section>
 
           <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
-          <div class="about-text">TEXT 3
+          <div class="about-text">
               <?php
                 $page = get_page_by_title('om Stall reje');
                 $content = apply_filters('the_content', $page->post_content);

@@ -18,7 +18,7 @@
 
     <div  class="pure-u-1-1 pure-u-md-1-2">
       <div id="borderLeft">
-        <h3> Följ på Sociala Medier </h3>
+        <h3> Följ oss på Sociala Medier </h3>
         <a href="http://www.instagram.com" class="socialMedia"><i class="fa fa-instagram" aria-hidden="true" style="font-size:36px;"></i></a>
         <a href="https://www.facebook.com/Stallreje/" class="socialMedia"><i class="fa fa-facebook" aria-hidden="true" style="font-size:36px;"></i></a>
       </div>

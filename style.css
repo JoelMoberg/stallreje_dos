@@ -181,7 +181,6 @@ header{
 
 .nyheter {
   font-size: 150%;
-  font-family: 'Raleway', sans-serif;
   padding: 0 10px;
 
 }
@@ -448,6 +447,7 @@ h1, h2, p{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 100%;
 }
 
 .insta{
