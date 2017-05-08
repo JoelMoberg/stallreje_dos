@@ -5,7 +5,6 @@
 
 # Allmänt
 - Markera nuvarande sida i länkarna
-- Loggan ska va länk
 
 # JS
 - hamburgare
