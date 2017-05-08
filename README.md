@@ -11,9 +11,5 @@
 - styla om-text
 - centera instafeed
 
-
-# Fixar
-- Bakgrund på nyheter
-
 # JS
 - hamburgare
