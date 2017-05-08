@@ -11,8 +11,8 @@ $(document).ready(function() {
 
 
 //checkScroll();
-//$("a[href*='" + location.pathname + "']").addClass("currentPage");
-console.log(location.pathname)
+$("a[href*='" + location.pathname + "']").addClass("currentPage");
+console.log(location.pathname);
 
 //Check if user is on mobile
 window.mobilecheck = function() {
