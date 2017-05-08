@@ -20,6 +20,5 @@
             echo '<li class="pure-menu-item"><a href="'.get_page_link( $page->ID).'">'.$page->post_title.'</a></li>';
           }
         ?>
-        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">&#9776;</a>
       </ul>
 </div>
