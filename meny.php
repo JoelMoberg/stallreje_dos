@@ -1,7 +1,6 @@
 <div id="menu" class="pure-menu pure-menu-horizontal">
-  <img class="pure-menu-heading" id="fadeInLogo" src="<?php bloginfo('template_directory');?>/assets/Stall_Reje_main.png" style="width: 180px" href="/">
-  <div class="vertical-middle">
-    <ul class="pure-menu-list navigation" >
+  <a href="/"><img class="pure-menu-heading" id="fadeInLogo" src="<?php bloginfo('template_directory');?>/assets/Stall_Reje_main.png" style="width: 180px" href="/"></a>
+    <ul class="pure-menu-list navigation">
       <?php
         $args = array(
           'sort_order' => 'ASC',
@@ -21,7 +20,6 @@
             echo '<li class="pure-menu-item"><a href="'.get_page_link( $page->ID).'">'.$page->post_title.'</a></li>';
           }
         ?>
-          <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">&#9776;</a>
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">&#9776;</a>
       </ul>
-    </div>
 </div>

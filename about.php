@@ -18,6 +18,12 @@ get_header(); ?>
         <section>
           <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
           <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper justo id malesuada pharetra. Praesent vestibulum ante turpis, eget eleifend ex porttitor ut.
+              Etiam consectetur, ex ac dictum posuere, tortor lorem luctus velit, id tincidunt metus nisi dignissim lacus.
+              Vestibulum viverra blandit neque, ut dignissim est ullamcorper ut.
+              Nam fringilla neque facilisis lorem gravida, quis pulvinar ipsum molestie. Proin ornare sit amet ligula id tristique.
+            </p>
               <?php
                 $page = get_page_by_title('om Stall reje');
                 $content = apply_filters('the_content', $page->post_content);
@@ -29,6 +35,12 @@ get_header(); ?>
 
           <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
           <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper justo id malesuada pharetra. Praesent vestibulum ante turpis, eget eleifend ex porttitor ut.
+              Etiam consectetur, ex ac dictum posuere, tortor lorem luctus velit, id tincidunt metus nisi dignissim lacus.
+              Vestibulum viverra blandit neque, ut dignissim est ullamcorper ut.
+              Nam fringilla neque facilisis lorem gravida, quis pulvinar ipsum molestie. Proin ornare sit amet ligula id tristique.
+            </p>
               <?php
                 $page = get_page_by_title('om Stall reje');
                 $content = apply_filters('the_content', $page->post_content);
@@ -41,6 +53,12 @@ get_header(); ?>
 
           <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
           <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper justo id malesuada pharetra. Praesent vestibulum ante turpis, eget eleifend ex porttitor ut.
+              Etiam consectetur, ex ac dictum posuere, tortor lorem luctus velit, id tincidunt metus nisi dignissim lacus.
+              Vestibulum viverra blandit neque, ut dignissim est ullamcorper ut.
+              Nam fringilla neque facilisis lorem gravida, quis pulvinar ipsum molestie. Proin ornare sit amet ligula id tristique.
+            </p>
               <?php
                 $page = get_page_by_title('om Stall reje');
                 $content = apply_filters('the_content', $page->post_content);
