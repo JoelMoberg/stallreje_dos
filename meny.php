@@ -21,7 +21,7 @@
           }
         ?>
       </ul>
-      <a href="javascript:void(0);" class="hamburger" id="toggleMenu"><i class="fa fa-bars" aria-hidden="true" ></i></a>
+      <a href="javascript:void(0);" class="hamburger" id="toggleMenu"><i class="fa fa-bars" aria-hidden="true" style="font-size: 32px;"></i></a>
 </div>
 
 <div class="responsiveMenu is-center">
@@ -46,7 +46,8 @@
             echo '<li class="pure-menu-item"><a href="'.get_page_link( $page->ID).'">'.$page->post_title.'</a></li>';
           }
         ?>
-        <a href="javascript:void(0);" class="close" id="close"><i class="fa fa-times"  aria-hidden="true"></i></a>
         </ul>
       </div>
+      <a href="javascript:void(0);" class="close" id="close"><i class="fa fa-times" aria-hidden="true" style="font-size: 64px;"></i></a>
+
     </div>
