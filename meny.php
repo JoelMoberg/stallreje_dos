@@ -21,4 +21,6 @@
           }
         ?>
       </ul>
+      <a href="javascript:void(0);" class="hamburger" id="toggleMenu"><i class="fa fa-bars" aria-hidden="true" ></i></a>
+
 </div>
