@@ -412,6 +412,10 @@ hr.style-seven {
 #menu a:hover, #menu a:active{
   border-bottom: 1px solid black;
 }
+#toggleMenu{
+  border-bottom: 0px solid black;
+  margin-top: 17px;
+}
 
 #menu img{
   position: absolute;
@@ -534,6 +538,7 @@ p{
   color: white;
   background: white;
   padding: 10px;
+  padding-bottom: 50px;
   background: -moz-linear-gradient(top, rgba(255,195,160,1) 0%, rgba(255,175,189,0.8) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(255,195,160,1) 0%,rgba(255,175,189,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(255,195,160,1) 0%,rgba(255,175,189,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -719,15 +724,12 @@ a:-webkit-any-link{
   .desktop-half{
     width: 96%;
   }
-  .pure-menu a:not(#fadeInLogo):not(.hamburger) {
-    display: none;
-  }
 
   .hamburger {
     display: inline-block;
   }
 
-  .pure-menu a:not(#fadeInLogo):not(.hamburger) {
+  .navigation, .navigation *{
     display: none;
   }
   .hamburger {
