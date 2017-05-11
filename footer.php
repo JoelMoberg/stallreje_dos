@@ -9,10 +9,10 @@
     <div  class="pure-u-1-1 pure-u-md-1-2">
       <div id="borderLeft">
       <h3> Kontakt </h3>
-      <p>Kallegatan 12</p>
-      <p>Kallegården</p>
-      <p>E-post: Calle@callegården.calle</p>
-      <p> Tel: 0700-000-400404-4</p>
+      <p>Street 12</p>
+      <p>Area</p>
+      <p>E-post: email@email.com</p>
+      <p> Tel: 070-700 00 00</p>
     </div>
     </div>
 
