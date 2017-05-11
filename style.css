@@ -393,7 +393,8 @@ hr.style-seven {
 
 
 #menu a{
-  font-family: 'Raleway', serif;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
   font-size: 1.2em;
   text-decoration: none;
   color: black;
@@ -409,7 +410,7 @@ hr.style-seven {
 }
 
 #menu a:hover, #menu a:active{
-  opacity: .7;
+  border-bottom: 1px solid black;
 }
 
 #menu img{
@@ -589,11 +590,11 @@ a:-webkit-any-link{
 
 
 .news-item-full{
+  width: 50%;
   margin: 100px auto;
   text-align: center;
   background: white;
   padding: 40px;
-  border-radius: 3px;
 }
 
 .news-item-full h1{
@@ -678,6 +679,10 @@ a:-webkit-any-link{
 }
 /* SMALL LAPTOP */
 @media only screen and (max-width: 1000px) {
+
+  .news-item-full{
+    width: 96%;
+  }
   .about-text p{
     padding: 0 30px;
   }
@@ -710,23 +715,18 @@ a:-webkit-any-link{
 @media screen and (max-width: 600px){
 
   .pure-menu a:not(#fadeInLogo):not(.hamburger) {display: none;}
-
-
-
   }
 
-  @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
 
-    .pure-menu a:not(#fadeInLogo):not(.hamburger) {display: none;}
-
-
-
-    .hamburger {
-      display: inline-block;
-    }
-
-    }
+  .pure-menu a:not(#fadeInLogo):not(.hamburger) {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
 }
+
 
 
 
