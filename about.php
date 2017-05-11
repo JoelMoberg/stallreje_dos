@@ -16,7 +16,7 @@ get_header(); ?>
     <div id="content-wrapper">
       <div class="about-section">
         <section>
-          <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
+          <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/PinkblackHorse.jpg')"></div>
           <div class="about-text">
 
               <?php
@@ -28,7 +28,7 @@ get_header(); ?>
         </section>
         <section>
 
-          <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
+          <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/Lindy.jpg')"></div>
           <div class="about-text">
 
               <?php
@@ -41,7 +41,7 @@ get_header(); ?>
 
         <section>
 
-          <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/rider.jpeg')"></div>
+          <div class="about-img" style="background: url('<?php bloginfo('template_directory');?>/assets/HelenaPerni.jpg')"></div>
           <div class="about-text">
 
               <?php
