@@ -1,6 +1,18 @@
+var edgeOrIE;
+
 $(document).ready(function() {
   instagramFeed();
 
+  var isIE = /*@cc_on!@*/false || !!document.documentMode;
+  var isEdge = !isIE && !!window.StyleMedia;
+
+  if(isIE || isEdge){
+    //$("#content-wrapper").css("padding-top", "2px");
+    //$("#content-wrapper").css("background", "white");
+    $("#menu").stick_in_parent();
+    edgeOrIE = true;
+
+  }
 });
 
 function instagramFeed() {
@@ -20,13 +32,22 @@ $(window).scroll(function (event){
 });
 
 function checkScroll(){
-  console.log("scroll");
   var scroll = $("#menu").position().top;
+  console.log(scroll);
   var pageHeight = $(window).height();
 
-  if(scroll >= (pageHeight + 2)){
-    $('#fadeInLogo').css("opacity", 1);
-  }else if(scroll < (pageHeight + 2)){
-    $('#fadeInLogo').css("opacity", 0);
+  if(edgeOrIE){
+    if(scroll <= 0){
+      $('#fadeInLogo').css("opacity", 1);
+    }else if(scroll < (pageHeight + 2)){
+      $('#fadeInLogo').css("opacity", 0);
+    }
+  }else{
+    if(scroll >= (pageHeight + 2)){
+      $('#fadeInLogo').css("opacity", 1);
+    }else if(scroll < (pageHeight + 2)){
+      $('#fadeInLogo').css("opacity", 0);
+    }
   }
+
 }
