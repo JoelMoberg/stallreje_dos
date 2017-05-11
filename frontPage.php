@@ -21,5 +21,7 @@
     <?php get_footer(); ?>
     <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/frontPage.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/main.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/sticky.js"></script>
+
   </body>
 </html>

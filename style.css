@@ -14,6 +14,10 @@ Tags: hästar
     box-sizing: border-box;
 }
 
+body{
+  font-size: 16px;
+}
+
 
 .grey{
   background: #EBEBEB;
@@ -183,11 +187,12 @@ header{
 }
 
 
-.inspoinfo{
+.inspoinfo p{
   opacity: 0.3;
+  display: inline;
 }
 
-.inspoinfo:hover{
+.inspoinfo p:hover{
   opacity: 1;
 }
 
@@ -228,9 +233,15 @@ header{
 .newsItem a{
   text-decoration: none;
   color:inherit;
+  display: inline;
+
 }
 
-.newsItem:hover{
+.newsItem h2{
+  display: inline;
+}
+
+.newsItem h2:hover{
   opacity: 0.7;
 }
 
@@ -382,8 +393,7 @@ hr.style-seven {
 
 
 #menu a{
-  font-family: 'PT Serif', serif;
-  font-weight: bold;
+  font-family: 'Raleway', serif;
   font-size: 1.2em;
   text-decoration: none;
   color: black;
@@ -412,8 +422,8 @@ hr.style-seven {
 }
 
 .currentPage{
-  //border-bottom: 1px solid black;
-  text-decoration: underline;
+  border-bottom: 1px solid black;
+  //text-decoration: underline;
 
 }
 
@@ -459,7 +469,7 @@ p{
 }
 
 .insta:hover .instaImg{
-  //filter: brightness(.25);
+  filter: brightness(.5);
 }
 
 .insta:hover .instaCaption{
@@ -477,10 +487,6 @@ p{
   right: 0px;
 
   opacity: 0;
-  background: -moz-linear-gradient(top, rgba(255,195,160,0.8) 0%, rgba(255,175,189,0.8) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(255,195,160,0.8) 0%,rgba(255,175,189,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(255,195,160,0.8) 0%,rgba(255,175,189,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffc3a0', endColorstr='#ccffafbd',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -545,11 +551,14 @@ p{
 .pure-g{
   //display: block!important;
   display: flex;
+  -webkit-display: flex;
+
 }
 
 
-#sidebar h2{
+#sidebar h2, #sidebar a{
   color: white;
+  text-decoration: none;
 }
 
 
@@ -594,20 +603,32 @@ a:-webkit-any-link{
 .about-section{
   display: flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 
 }
 .about-section section{
   width: 100%;
   display: flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+
 }
 .about-section section:nth-child(even){
   flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+
 }
 .about-section section div{
-  height: 50vw;
+  height: calc(100vh - 62px);
+  height: -o-calc(100vh - 62px);
+  height: -webkit-calc(100vh - 62px);
+  height: -moz-calc(100vh - 62px);
+
   flex-basis: 100%;
   flex: 1;
+  -webkit-flex-basis: 100%;
+  -webkit-flex: 1;
+
 }
 .about-img{
   background-repeat: no-repeat!important;
@@ -616,14 +637,11 @@ a:-webkit-any-link{
 }
 
 .about-text{
-  background: white;
   box-sizing: border-box;
   position: relative;
-  background: -moz-linear-gradient(top, rgba(255,195,160,1) 0%, rgba(255,175,189,0.8) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(255,195,160,1) 0%,rgba(255,175,189,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(255,195,160,1) 0%,rgba(255,175,189,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffc3a0', endColorstr='#ccffafbd',GradientType=0 ); /* IE6-9 */
-
+  background: #FFAFBD;
+  background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD);
 }
 
 .about-text p{
@@ -670,10 +688,14 @@ a:-webkit-any-link{
   .about-section section{
     width: 100%;
     display: flex;
+    flex-direction: column;
     -webkit-flex-direction: column;
+    min-height: 1000px;
   }
   .about-section section:nth-child(even){
     flex-direction: column;
+    -webkit-flex-direction: column;
+
   }
 
   .about-section section .about-text{
