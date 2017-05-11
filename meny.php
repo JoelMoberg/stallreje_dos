@@ -21,7 +21,7 @@
           }
         ?>
       </ul>
-      <a href="javascript:void(0);" class="hamburger" id="toggleMenu"><i class="fa fa-bars" aria-hidden="true" style="font-size: 32px;"></i></a>
+      <div class="hamburger" id="toggleMenu"><i class="fa fa-bars" aria-hidden="true" style="font-size: 32px;"></i></div>
 </div>
 
 <div class="responsiveMenu is-center">
