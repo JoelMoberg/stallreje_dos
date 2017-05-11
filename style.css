@@ -719,23 +719,13 @@ a:-webkit-any-link{
   .desktop-half{
     width: 96%;
   }
-}
-
-@media screen and (max-width: 780px){
-
-  .pure-menu a:not(#fadeInLogo):not(.hamburger) {display: none;}
+  .pure-menu a:not(#fadeInLogo):not(.hamburger) {
+    display: none;
   }
 
-
-  @media screen and (max-width: 780px){
-
-    .pure-menu a:not(#fadeInLogo):not(.hamburger) {display: none;}
-
-
-
-    .hamburger {
-      display: inline-block;
-    }
+  .hamburger {
+    display: inline-block;
+  }
 
   .pure-menu a:not(#fadeInLogo):not(.hamburger) {
     display: none;
@@ -743,8 +733,9 @@ a:-webkit-any-link{
   .hamburger {
     display: inline-block;
   }
-}
 
+
+}
 
 
 
